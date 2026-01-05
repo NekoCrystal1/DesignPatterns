@@ -1,0 +1,9 @@
+#VS
+.vs/*
+*.sln
+*.vcxproj*
+DesignPatterns/*.vcxproj*
+
+#Debug
+x64/*
+DesignPatterns/x64/*
