@@ -1,2 +1,6 @@
+#vs
 .vs/*
 
+#debug
+x64/*
+DesignPatternsReport/x64/*
