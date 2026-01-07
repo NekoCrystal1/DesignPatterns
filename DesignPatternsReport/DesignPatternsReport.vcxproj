@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="StepsCounterObserver.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Observer.hpp" />
+    <ClInclude Include="StepsObserver.hpp" />
     <ClInclude Include="StepsSubject.hpp" />
     <ClInclude Include="Subject.hpp" />
   </ItemGroup>

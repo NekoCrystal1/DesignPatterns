@@ -18,6 +18,9 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="StepsCounterObserver.hpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Observer.hpp">
@@ -27,6 +30,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="StepsSubject.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StepsObserver.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

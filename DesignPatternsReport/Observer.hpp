@@ -16,6 +16,6 @@ protected:
 	std::string m_strName;
 };
 
-Observer::Observer(std::string name) : m_strName(name)
+Observer::Observer(std::string name)
 {
 }

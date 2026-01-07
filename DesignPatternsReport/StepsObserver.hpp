@@ -25,6 +25,7 @@ StepsObserver::StepsObserver(std::string name, int targetSteps) : Observer(name)
 void StepsObserver::update(int state)
 {
 	if(!b_hasTrigger && state > m_i32TargetSteps)
+	{
 		std::cout << m_i32TargetSteps << " Steps!" << std::endl;
 	}
 }
