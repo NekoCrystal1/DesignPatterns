@@ -16,16 +16,17 @@ public:
 	virtual void update(int state);
 private:
 	int m_i32TargetSteps;
-	bool b_hasTrigger;
+	bool m_bHasTrigger;
 };
 
-StepsObserver::StepsObserver(std::string name, int targetSteps) : Observer(name), m_i32TargetSteps(targetSteps), b_hasTrigger(false)
+StepsObserver::StepsObserver(std::string name, int targetSteps) : Observer(name), m_i32TargetSteps(targetSteps), m_bHasTrigger(false)
 {}
 
 void StepsObserver::update(int state)
 {
-	if(!b_hasTrigger && state > m_i32TargetSteps)
+	if(!m_bHasTrigger && state > m_i32TargetSteps)
 	{
-		std::cout << m_i32TargetSteps << " Steps!" << std::endl;
+		std::cout << "!Steps " << m_i32TargetSteps << " Steps!" << std::endl;
+		m_bHasTrigger = true;
 	}
 }

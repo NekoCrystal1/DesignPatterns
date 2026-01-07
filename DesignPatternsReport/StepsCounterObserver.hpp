@@ -5,22 +5,19 @@
  * @details step作为更新步数
  */
 #pragma once
-#include <iostream>
 #include "Observer.hpp"
+#include <iostream>
 
 class StepsCounterObserver : public Observer
 {
 public:
-	StepsCounterObserver(std::string name);
+	StepsCounterObserver(std::string name) : Observer(name) {};
 	~StepsCounterObserver() = default;
 	virtual void update(int state);
 private:
 };
 
-StepsCounterObserver::StepsCounterObserver(std::string name) : Observer(name)
-{}
-
-void StepsCounterObserver::update(int state)
+inline void StepsCounterObserver::update(int state)
 {
-		std::cout << "It has moved" << state << " Steps!" << std::endl;
+		std::cout << "StepsCounter : It has moved " << state << " Steps!" << std::endl;
 }
